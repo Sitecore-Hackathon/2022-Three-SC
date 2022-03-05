@@ -9,6 +9,8 @@
 
 ## Description
 ⟹ This module extends the Sitecore CLI plugin, adding a new plugin named Three.SC.CLI
+The CLI is published on Nuget and can be installed as a Sitecore CLI Plugin.
+https://www.nuget.org/packages/Three.SC.CLI/ 
 
  **This plugin comes with two commands**
  1. Listing all locked Sitecore items in Sitcore tree.
