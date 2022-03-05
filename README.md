@@ -73,7 +73,5 @@
 
     
 
-![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-
 ## Comments
 If you'd like to make additional comments that is important for your module entry.
