@@ -45,12 +45,12 @@
 ## Installation instructions
 
  1. Install Sitecore CLI using Sitecore documentation https://doc.sitecore.com/xp/en/developers/101/developer-tools/install-sitecore-command-line-interface.html
- 2. Install Three.SC.CLI using the following command
+ 2. Install Three.SC.CLI using the one of following commands
 
    
     **dotnet sitecore plugin add -n Three.SC.CLI**  
       
-      
+
     **dotnet sitecore plugin add -n Three.SC.CLI --version 1.0.3**
    
  3. Install the the CLI endpoints Sitecore package in this repository under the folder package
