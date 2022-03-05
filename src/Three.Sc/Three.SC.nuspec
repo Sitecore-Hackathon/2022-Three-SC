@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Three.SC.CLI</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Three.SC</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package Description</description>
@@ -16,5 +16,9 @@
   </metadata>
   <files>
     <file src="Three.SC.CLI\bin\Release\netcoreapp3.1\Three.SC.CLI.dll" target="plugin" />
+    <file src="Three.SC.CLI\lib\Microsoft.Extensions.Http.dll" target="plugin" />
+    <file src="Three.SC.CLI\lib\Sitecore.DevEx.Extensibility.Indexing.dll" target="plugin" />
+    <file src="Three.SC.CLI\lib\Sitecore.DevEx.Serialization.Client.dll" target="plugin" />
+    <file src="Three.SC.CLI\lib\Sitecore.DevEx.Serialization.dll" target="plugin" /> 
   </files>
 </package>

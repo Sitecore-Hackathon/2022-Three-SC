@@ -2,7 +2,7 @@
 dotnet sitecore plugin add -n Three.SC.CLI 
 
 ### Add plugin by version 
-dotnet sitecore plugin add -n Three.SC.CLI --version 1.0.2
+dotnet sitecore plugin add -n Three.SC.CLI --version 1.0.3
 
 ### Remove plugin to SItecore CLI 
 dotnet sitecore plugin remove -n Three.SC.CLI 
@@ -12,3 +12,6 @@ dotnet sitecore plugin remove -n SC-CLI-POC
 
 ## login 
 dotnet sitecore login --cm https://three.scsc.dev.local/ --auth https://three.scidentityserver.dev.local/ --allow-write true
+
+## Nuget package generation 
+nuget 
