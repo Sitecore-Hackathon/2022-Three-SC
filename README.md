@@ -15,12 +15,13 @@
  2. Unlocking all Sitecore items at once or by passing thier item IDs in the CLI.
 
 **The problem we solve:**
- - Unlocking a single Sitecore item is very easy to perform, however when developers want to unlock all the Sitecore items at once, it will take time to go through each item or prepare different scripts to loop the content tree and unlock all items.
+ - Unlocking a **single** Sitecore item is very easy to perform, however when we want to unlock all the Sitecore items in the tree at once it becomes a challenging task.
+ it will take a long time to go through each item for unlocking. Some prepare different scripts to loop the content tree to unlock the items.
 
- - Getting a list of all locked item in Sitecore content tree can be challenging and require us to write a script.
+ - Getting a list of all locked items in the Sitecore content tree can be challenging and require us to write a script.
 
  **The solution:**
- You can unlock all Sitecore items in the content tree using one line command with the Three.SC.CLI plugin that we built in the Hackathon 2022.  
+  You can unlock all Sitecore items in the content tree using the one-line command with the Three.SC.CLI plugin that we built in Hackathon 2022. 
 
      dotnet sitecore items unlock
 
@@ -70,6 +71,14 @@
   List all locked Sitecore items based on IDs  
 
      dotnet sitecore items listlocked -i {ids}
+
+Get help with all available paramters for listlocked command 
+
+     dotnet sitecore items listlocked -h
+
+Get help with all available paramters for unlock command 
+
+     dotnet sitecore items unlock -h
 
     
 
