@@ -27,19 +27,19 @@ namespace Three.SC.CLI.Client.Services
             {
                 result.AddRange(itemsNames);
             }
-            return Task.FromResult(result.AsEnumerable());
+            //return Task.FromResult(result.AsEnumerable());
 
-            //ISitecoreApiClient apiClient = this._apiClient;
-            //if (apiClient.Endpoint == null)
-            //{
-            //    EnvironmentConfiguration environmentConfiguration;
-            //    apiClient.Endpoint = environmentConfiguration = configuration;
-            //}
-            //return this._apiClient.RunQuery<IEnumerable<string>>("/sitecore/api/management", new GraphQLRequest()
-            //{
-            //    Query = "\nquery{\n  indexesList\n}",
-            //    Variables = (object)new Dictionary<string, object>()
-            //}, "indexesList", cancellationToken);
+            ISitecoreApiClient apiClient = this._apiClient;
+            if (apiClient.Endpoint == null)
+            {
+                EnvironmentConfiguration environmentConfiguration;
+                apiClient.Endpoint = environmentConfiguration = configuration;
+            }
+            return this._apiClient.RunQuery<IEnumerable<string>>("/sitecore/api/management", new GraphQLRequest()
+            {
+                Query = "\nquery{\n  indexesList\n}",
+                Variables = (object)new Dictionary<string, object>()
+            }, "indexesList", cancellationToken);
         }
     }
 }
